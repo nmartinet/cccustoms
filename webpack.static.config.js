@@ -24,7 +24,7 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: 'docs',
-    publicPath: '../',
+    publicPath: 'https://raw.githubusercontent.com/nmartinet/cccustoms/master/docs/',
     libraryTarget: 'umd'
   },
   module: {
