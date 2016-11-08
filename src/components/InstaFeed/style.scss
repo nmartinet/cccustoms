@@ -1,0 +1,71 @@
+@import "./../../style/constants.scss";
+
+.instagram-feed {
+  background-color: $c3;
+
+  h3 {
+    font-size: 1.75em;
+    text-align: center;
+    margin-bottom: 30px;
+
+    a {
+      color: $c4;
+      text-decoration: none;
+
+      &:hover {
+        color: $c5;
+      }
+
+    }
+  }
+
+  .picture-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .picture {
+      display: block;
+      flex-basis: 25%;
+      display:block;
+      position:relative;
+
+      .picture-caption {
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        padding: 0;
+        opacity: 0;
+        transition: 0.5s;
+
+        .caption-wrapper {
+          position:absolute;
+          top: 0;
+          height: 100%;
+          text-align: center;
+          background-color: rgba($c5, 0.75);
+          width: 100%;
+          padding: 15px;
+
+          overflow: hidden;
+
+          .link{
+            font-size: 2em;
+          }
+
+        }
+        
+        &:hover {
+          opacity: 100;
+        }
+
+        a{
+          text-decoration: none;
+        }
+
+      }
+    }
+  }
+}
