@@ -46,7 +46,7 @@ class Welcome extends React.Component {
       <section id="welcome">
         <div className="landing">
           <div className="logo">
-            <img src={require("./logo-b.png")} />
+            <img src="https://raw.githubusercontent.com/nmartinet/cccustoms/master/docs/2eddc45c02a5671d189df0ca446d1306.png" />
           </div>
         </div>
         <div className="intro">
